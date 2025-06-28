@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shabunda Minerals and Logistics Ltd</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Language Selector -->
+  <div class="lang-select">
+    <label for="language">🌐 Language:</label>
+    <select id="language" onchange="changeLanguage()">
+      <option value="en">English</option>
+      <option value="fr">Français</option>
+      <option value="de">Deutsch</option>
+      <option value="es">Español</option>
+      <option value="it">Italiano</option>
+      <option value="ru">Русский</option>
+      <option value="zh">中文</option>
+      <option value="ar">العربية</option>
+    </select>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <img src="logo.png" alt="Shabunda Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="#about" data-i18n="about">About</a></li>
+          <li><a href="#services" data-i18n="services">Services</a></li>
+          <li><a href="#gallery" data-i18n="gallery">Gallery</a></li>
+          <li><a href="#contact" data-i18n="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1 data-i18n="hero-title">Shabunda Minerals and Logistics Ltd</h1>
+    <p data-i18n="hero-sub">Driving Africa's mineral wealth with trust and sustainability</p>
+    <a href="#contact" class="btn" data-i18n="hero-btn">Partner with Us</a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 data-i18n="about-title">About Us</h2>
+      <p data-i18n="about-text1">At Shabunda Minerals and Logistics Ltd, we are committed to revolutionizing mineral transport and supply chain management across Africa.</p>
+      <p data-i18n="about-text2">Our operations span across mining zones, border points, and international hubs. We bring expertise, reliability, and transparency to the mineral trade.</p>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2 data-i18n="services-title">Our Services</h2>
+      <div class="services">
+        <div class="service" data-i18n="service1">⛏ Mineral Site Logistics</div>
+        <div class="service" data-i18n="service2">🚛 Ground Transport Fleet</div>
+        <div class="service" data-i18n="service3">✈️ Air Freight Solutions</div>
+        <div class="service" data-i18n="service4">📦 Supply Chain Optimization</div>
+        <div class="service" data-i18n="service5">🌍 Export & Documentation</div>
+      </div>
+      <p class="desc" data-i18n="services-desc">Whether you're an international buyer, local supplier, or mining cooperative, we ensure seamless logistics and compliance from mine to market.</p>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <h2 data-i18n="gallery-title">Gallery</h2>
+      <div class="gallery">
+        <img src="images.webp" alt="Mining site">
+        <img src="images-1.jpg" alt="Truck fleet">
+        <img src="images-2.jpg" alt="Air transport">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 data-i18n="contact-title">Contact Us</h2>
+      <p data-i18n="contact-desc">Ready to collaborate or have questions about our services?</p>
+      <form id="contactForm">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <input type="tel" placeholder="Your Phone" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" data-i18n="contact-btn">Send Message</button>
+      </form>
+      <div class="contact-info">
+        <p><strong data-i18n="location-label">Location:</strong> Mitala Road Muyenga Opposite sisters of Mary Repatrex</p>
+        <p><strong data-i18n="phone-label">Phone:</strong> +256747504263</p>
+        <p><strong data-i18n="email-label">Email:</strong> info@shabundamineralsandlogistics.com</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p data-i18n="footer">© 2025 Shabunda Minerals and Logistics Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
