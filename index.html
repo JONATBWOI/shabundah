@@ -13,7 +13,7 @@
     <label for="language">🌐 Language:</label>
     <select id="language" onchange="changeLanguage()">
       <option value="en">English</option>
-      <option value="fr">Français</option>
+      <option value="fr">Français</option>ß
       <option value="de">Deutsch</option>
       <option value="es">Español</option>
       <option value="it">Italiano</option>
@@ -31,14 +31,12 @@
         <ul>
           <li><a href="#about" data-i18n="about">About</a></li>
           <li><a href="#services" data-i18n="services">Services</a></li>
-          <li><a href="#gallery" data-i18n="gallery">Gallery</a></li>
           <li><a href="#contact" data-i18n="contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
   <!-- Hero Section -->
   <section class="hero">
     <h1 data-i18n="hero-title">Shabunda Minerals and Logistics Ltd</h1>
@@ -60,47 +58,61 @@
     <div class="container">
       <h2 data-i18n="services-title">Our Services</h2>
       <div class="services">
-        <div class="service" data-i18n="service1">⛏ Mineral Site Logistics</div>
-        <div class="service" data-i18n="service2">🚛 Ground Transport Fleet</div>
-        <div class="service" data-i18n="service3">✈️ Air Freight Solutions</div>
-        <div class="service" data-i18n="service4">📦 Supply Chain Optimization</div>
-        <div class="service" data-i18n="service5">🌍 Export & Documentation</div>
+        <div class="service">
+          <h3 data-i18n="service1">⛏ Mineral Site Logistics</h3>
+          <img src="images-1.jpg" alt="Mining site">
+          <img src="images-1.0.jpg" alt="Mining site">
+          <p>We provide tailored logistics directly at the mineral extraction points, ensuring safe and compliant handling from the moment minerals are sourced.</p>
+        </div>
+
+        <div class="service">
+          <h3 data-i18n="service2">🚛 Ground Transport Fleet</h3>
+          <img src="images-1.jpg" alt="Truck fleet">
+          <img src="images-1.1.jpg" alt="Truck fleet">
+          <p>Our dedicated fleet of transport vehicles ensures efficient delivery of mineral consignments, both locally and regionally.</p>
+        </div>
+
+        <div class="service">
+          <h3 data-i18n="service3">✈️ Air Freight Solutions</h3>
+          <img src="images.webp" alt="Air transport">
+          <p>When speed is critical, our air freight options guarantee fast and secure shipment of high-value minerals globally.</p>
+        </div>
+
+        <div class="service">
+          <h3 data-i18n="service4">📦 Supply Chain Optimization</h3>
+          <img src="images-3.jpg" alt="Air transport">
+          <p>From mine to market, we integrate logistics, documentation, and compliance systems to streamline your entire supply chain.</p>
+        </div>
+
+        <div class="service">
+          <h3 data-i18n="service5">🌍 Export & Documentation</h3>
+          <img src="images-4.jpg" alt="Air transport">
+          <p>We manage all documentation and regulatory processes to facilitate smooth international trade and customs clearance.</p>
+        </div>
       </div>
       <p class="desc" data-i18n="services-desc">Whether you're an international buyer, local supplier, or mining cooperative, we ensure seamless logistics and compliance from mine to market.</p>
     </div>
   </section>
 
-  <!-- Gallery -->
-  <section id="gallery" class="section">
-    <div class="container">
-      <h2 data-i18n="gallery-title">Gallery</h2>
-      <div class="gallery">
-        <img src="images.webp" alt="Mining site">
-        <img src="images-1.jpg" alt="Truck fleet">
-        <img src="images-2.jpg" alt="Air transport">
-      </div>
+ <!-- Contact -->
+ <section id="contact" class="section">
+  <div class="container">
+    <h2 data-i18n="contact-title">Contact Us</h2>
+    <p data-i18n="contact-desc">Ready to collaborate or have questions about our services?</p>
+    <form action="https://formspree.io/f/mqabwynq" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="tel" name="phone" placeholder="Your Phone" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" data-i18n="contact-btn">Send Message</button>
+    </form>
+    <div class="contact-info">
+      <p><strong data-i18n="location-label">Location:</strong> Mitala Road Muyenga Opposite sisters of Mary Repatrex</p>
+      <p><strong data-i18n="phone-label">Phone:</strong> +256747504263</p>
+      <p><strong data-i18n="email-label">Email:</strong> info@shabundamineralsandlogistics.com</p>
     </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2 data-i18n="contact-title">Contact Us</h2>
-      <p data-i18n="contact-desc">Ready to collaborate or have questions about our services?</p>
-      <form id="contactForm">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <input type="tel" placeholder="Your Phone" required />
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit" data-i18n="contact-btn">Send Message</button>
-      </form>
-      <div class="contact-info">
-        <p><strong data-i18n="location-label">Location:</strong> Mitala Road Muyenga Opposite sisters of Mary Repatrex</p>
-        <p><strong data-i18n="phone-label">Phone:</strong> +256747504263</p>
-        <p><strong data-i18n="email-label">Email:</strong> info@shabundamineralsandlogistics.com</p>
-      </div>
-    </div>
-  </section>
+  </div>
+</section>
 
   <!-- Footer -->
   <footer>
